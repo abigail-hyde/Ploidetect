@@ -29,7 +29,7 @@ RUN  apt-get update -qq && apt-get -y --no-install-recommends install \
 
 ## Install devtools & Ploidetect
 RUN install2.r devtools tidyr ggrastr 
-RUN Rscript -e "devtools::install_github('lculibrk/Ploidetect', ref = 'v1.4.2')"
+RUN Rscript -e "devtools::install_github('abigail-hyde/Ploidetect')"
 
 ## Install preprocessing software
 #RUN apt-get -y --no-install-recommends install \ 
