@@ -46,7 +46,7 @@ ploidetect_presegment <- function(all_data, centromeres = F, simplify_size = 100
   
   
   ## Initial prior, low TC so we get conservative segmentation
-  tp=0.15
+  tp=0.9
   ploidy=2
   
   ## Segment the genome!
