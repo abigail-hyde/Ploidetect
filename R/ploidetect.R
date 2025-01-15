@@ -48,6 +48,7 @@ ploidetect_presegment <- function(all_data, centromeres = F, simplify_size = 100
   ## Initial prior, low TC so we get conservative segmentation
   tp=0.9
   ploidy=2
+  print("tumour purity is: ", tp)
   
   ## Segment the genome!
   segmented_data <- ploidetect_segmentator(processed_data, maxpeak = maxpeak, verbose = F, tp = tp, ploidy = ploidy, segmentation_threshold = 0.25)
